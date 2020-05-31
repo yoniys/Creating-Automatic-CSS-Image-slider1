@@ -1,0 +1,40 @@
+.slider{
+    outline:1px solid red;
+    width:400px;
+    height:400px;
+    overflow:hidden;
+    margin:auto;
+    
+}
+.slider_content{display: flex;}
+.slider_content img{ 
+     height: 400px;
+     width:400px;
+     animation-name: slide;
+     animation-duration:10s;
+     animation-iteration-count: infinite;
+    }
+  
+    @keyframes slide{
+        
+        15%{
+          transform:translateX(0px);
+        }
+        30%{
+            transform:translateX(-420px);
+        }
+        45%{
+            transform:translateX(-840px);
+        }
+        60%{
+            transform:translateX(-1250px);
+        }
+
+        75%{
+            transform:translateX(-1640px);
+        }
+        100%{
+            transform:translateX(0px);
+        } 
+        
+      }
